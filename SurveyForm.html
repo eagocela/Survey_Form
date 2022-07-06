@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor a Pet</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="SurveyForm.css">
+    <link rel="shortcut icon" href="https://pawssionproject.org.ph/wp-content/uploads/2021/09/White.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Left Side -->
+        <div class="left">
+          <img class="logo" src="https://pawssionproject.org.ph/wp-content/uploads/2021/09/White.png" alt="">
+            <div class="header">
+              <h1 id="title" class="title">Sponsor a Pet!</h1>
+              <h4>While not everyone can adopt, there are always other ways to help our rescues.</h4>
+              <p id="description">
+              For a minimum amount of P1,000 per Rescue, you can already sponsor a rescue of your choice for a whole month! This amount covers the rehabilitation of the rescue while waiting to be adopted and other expenses such as rescue operations and shelter needs.
+              </p>
+            </div>
+        </div>
+        
+
+        <!-- Right Side  -->
+        <div class="right">
+          <div class="box">
+            <form id="survey-form" class="scrollbar" action="results.html" method="get">
+                
+              
+              <!--Sponsor Info-->
+                <h2>Sponsor Info</h2>
+
+                <!-- Name -->
+                <div class="form__div">
+                    <input type="name" class="form__input" placeholder=" " required>
+                    <label for="name" id="name-label" class="form__label">Full Name</label>
+                </div>
+
+                <!--Email-->
+                <div class="form__div">
+                    <input type="email" class="form__input" placeholder=" " required>
+                    <label for="email" id="email-label" class="form__label">Email</label>
+                </div>
+
+                <!--Number-->
+                <div class="form__div">
+                    <input type="tel" class="form__input" minlength="7" maxlength="13" placeholder=" " required>
+                    <label for="number" id="number-label" class="form__label">Number</label>
+                </div>
+
+
+                <!--Sponsorship Details-->
+                <h2>Sponsorship Details</h2>
+
+                <!-- Type of Animal -->
+                <div class="radio">
+                    <label for="">Pet to Sponsor:</label><br>
+                    <input type="radio" id="dog" name="type" value="dog">
+                    <label for="dog">Dog</label><br>
+                    <input type="radio" id="cat" name="type" value="cat">
+                    <label for="cat">Cat</label><br>
+                    <input type="radio" id="emer" name="type" value="emer">
+                    <label for="emer">Emergency Cases</label>
+                </div>
+
+                <!-- Choose a Rescue  -->
+                <div class="dropdown">
+                <label for="choose">Choose a rescue:</label><br>
+                  <select name="program" id="dropdown" required>
+                      <option disabled selected value> -- choose an option -- </option>
+                      <option value="opA">I'll choose the rescue/s I want to sponsor</option>
+                      <option value="opB">Choose a rescue for me</option>
+                  </select>
+                  </div>
+                  <div class="rescuename">
+                    <label for="rescuename">Name of Rescue/s</label>
+                    <textarea name="rescuename" id="rescuename" rows="1" cols="30" placeholder="If you chose Option A"></textarea>
+                  </div>
+
+                  <!-- Donatiton Channels -->
+                  <div class="checkbox">
+                    <label for="">Shelter Wishlist:</label><br>
+                    <input type="checkbox" id="food" name="sw" value="food" required>
+                    <label for="food">Food</label><br>
+                    <input type="checkbox" id="meds" name="sw" value="meds">
+                    <label for="meds">Medicine</label><br>
+                    <input type="checkbox" id="supplies" name="sw" value="supplies">
+                    <label for="supplies">Supplies</label><br>
+                    <input type="checkbox" id="other" name="sw" value="other">
+                    <label for="other">Other/s</label><br>
+                    <textarea name="rescuename" id="rescuename" rows="1" cols="30" placeholder="For other/s, please specify."></textarea>
+                  </div>
+
+                  <!-- Duration of Sponsorship -->
+                  <div class="dropdown">
+                      <label for="program">Duration of Sponsorship:</label><br>
+                        <select name="program" id="dropdown" required>
+                            <option disabled selected value> -- choose duration -- </option>
+                            <option value="1mo">Monthly (Php 1,000)</option>
+                            <option value="1yr">Yearly (Php 12,000</option>
+                            <option value="6mo">6 Months (Php 6,000)</option>
+                            <option value="custom">Custom (minimum of Php 1,000)</option>
+                        </select>
+                  </div>
+
+                  <!-- Donation Channels -->
+                  <div class="donationchan">
+                    <p>**Sponsorship fee may be sent through the following <a id="channels" href="https://pawssionproject.org.ph/donate/" target="_blank">donation channels:</a><br>
+                  </div><br>
+                  <div class="file">
+                    <label for="myfile">Proof of Donation:</label>
+                    <input type="file" id="myfile" name="myfile" required>
+                  </div><br>
+
+                  <!-- Sponsorship Renewal-->
+                  <div class="radio">
+                    <label for="">I would like to receive sponsorship renewal reminders.</label><br>
+                    <input type="radio" id="yes" name="renew" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="renew" value="yes">
+                    <label for="yes">No</label>
+                 </div>
+
+                  <!-- Sponsorship Consent-->
+                  <div class="radio">
+                    <label for="">I consent to having my name displayed as my chosen Rescue's Sponsor for the month on Pawssion Project's website.</label><br>
+                    <input type="radio" id="yes" name="consent" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="consent" value="yes">
+                    <label for="yes">No</label>
+                  </div>
+
+                  <!-- Special Request/s -->
+                  <div class="requests">
+                    <label for="requests">Special Request/s:</label>
+                    <textarea name="requests" id="requests" rows="3" cols="30"></textarea>
+                  </div>      
+
+                  <!-- Submit Button  -->
+                  <input id="submit" type="submit" value="SUBMIT">
+            </form>
+          </div>
+          <a id="more-link" href="https://pawssionproject.org.ph/" target="_blank"><span>Visit our site </span>to know more</a>
+        </div>
+    </main>
+    <footer>
+			<p>&copy; 2022 &bull; <a href="https://github.com/eagocela" target="_blank">Elka Gocela</a></p>	
+	</footer>
+</body>
+</html>

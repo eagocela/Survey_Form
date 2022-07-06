@@ -1,0 +1,54 @@
+body {
+  background-color: #55652d;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+#header {
+  display: block;
+  position: relative;
+}
+
+#description {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  width: auto;
+  height: auto;
+  padding: 3rem 10rem 3rem 10rem;
+  background-color: #779238;
+}
+
+.logo {
+  position: relative;
+  margin-left: 35%;
+  margin-top: 10rem;
+  width: 30%;
+  height: auto;
+}
+
+#header h1 {
+  color: #ffae13;
+}
+
+#header h4 {
+  color: #ffae13;
+}
+
+#header p {
+  line-height: 25px;
+  margin: 15px 0 10px 0;
+}
+
+#header a {
+  text-decoration: none;
+  color: #445322;
+}
+
+#header a:hover {
+  color: #6e3410;
+}
